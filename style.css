@@ -10,38 +10,83 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--warm-gray);
   color: var(--text-dark);
-  margin: 20px;
+  margin: 0;
 }
 
-h1, h2 {
+header {
+  background-color: var(--soft-blue);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+h2 {
   font-family: 'Playfair Display', serif;
   color: var(--soft-blue);
 }
 
+nav {
+  background-color: var(--lavender);
+  padding: 10px 0;
+}
+
 nav ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav li {
-  display: inline;
-  margin-right: 15px;
+  margin: 0 20px;
 }
 
 nav a {
   text-decoration: none;
-  color: var(--soft-blue);
+  color: white;
   font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--beige);
+  color: var(--text-dark);
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
 table {
   border-collapse: collapse;
-  width: 60%;
-  margin-top: 10px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 th, td {
   border: 1px solid var(--text-dark);
-  padding: 8px;
+  padding: 10px;
   text-align: left;
+}
+
+th {
+  background-color: var(--soft-blue);
+  color: white;
+}
+
+td {
+  background-color: #fff;
 }
